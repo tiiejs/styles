@@ -1,0 +1,14 @@
+.tiie-input {
+    width: 100%;
+    padding: 4px;
+    border: 1px silver solid;
+    background-color: white;
+    border-radius: 3px;
+    color: #454545;
+}
+
+.tiie-input.--error {
+    background-color: #fbeaea;
+    border: 1px red solid;
+    color: red;
+}
