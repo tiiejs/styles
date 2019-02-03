@@ -1,3 +1,5 @@
+@import "~Tiie/Styles/variables.scss";
+
 .tiie-input {
     width: 100%;
     padding: 4px;
@@ -8,7 +10,7 @@
 }
 
 .tiie-input.--error {
-    background-color: #fbeaea;
-    border: 1px red solid;
-    color: red;
+    background-color: $tiieColorErrorBackground;
+    border: 1px $tiieColorErrorBorder solid;
+    color: $tiieColorError;
 }

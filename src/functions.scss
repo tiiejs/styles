@@ -1,0 +1,3 @@
+@function makeGreener($value, $level:50) {
+    @return $value + rgb(0, $level, 0);
+}

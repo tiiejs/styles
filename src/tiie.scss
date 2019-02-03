@@ -1,18 +1,13 @@
-@import 'tiie-blank-photo.scss';
-@import 'tiie-button.scss';
-@import 'tiie-dialog.scss';
-@import 'tiie-groups.scss';
-@import 'tiie-input.scss';
-@import 'tiie-portlet-light.scss';
-@import 'tiie-portlet.scss';
-@import 'tiie-section.scss';
-@import 'tiie-table.scss';
-@import 'tiie-textarea.scss';
-@import 'tiie-toolbar.scss';
-@import 'tiie-topbar.scss';
-@import 'tiie-vc-loader.scss';
-@import 'tiie-vw-pagination.scss';
-@import 'tiie-variables.scss';
+@import "tiie-blank-photo.scss";
+@import "tiie-button.scss";
+@import "tiie-groups.scss";
+@import "tiie-input.scss";
+@import "tiie-link.scss";
+@import "tiie-portlet.scss";
+@import "tiie-section.scss";
+@import "tiie-table.scss";
+@import "tiie-textarea.scss";
+@import "variables.scss";
 
 * {
     box-sizing: border-box;
@@ -93,7 +88,7 @@
     padding-right: 10px;
 }
 
-/** cursor **/
+/** tiie--cursor-* **/
 .tiie--cursor-alias {
     cursor: alias;
 }
@@ -250,48 +245,69 @@
     cursor: inherit;
 }
 
-/** space **/
-.tiie--space-10 {
-    margin: 10px;
-    padding: 10px;
+/** tiie--space-* **/
+@for $var from 1 through 20 {
+    .tiie--space-#{5*$var} {
+        margin: 5px * $var;
+        padding: 5px * $var;
+    }
 }
 
-.tiie--space-horizontally-10 {
-    padding-left: 10px;
-    padding-right: 10px;
-
-    margin-left: 10px;
-    margin-right: 10px;
+/** tiie--space-horizontally-* **/
+@for $var from 1 through 20 {
+    .tiie--space-horizontally-#{5*$var} {
+        margin-left: 5px * $var;
+        margin-right: 5px * $var;
+        padding-left: 5px * $var;
+        padding-right: 5px * $var;
+    }
 }
 
-.tiie--space-vertical-10 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    margin-top: 10px;
-    margin-bottom: 10px;
+/** tiie--space-vertical-* **/
+@for $var from 1 through 20 {
+    .tiie--space-vertical-#{5*$var} {
+        margin-top: 5px * $var;
+        margin-bottom: 5px * $var;
+        paddin-top: 5px * $var;
+        padding-bottom: 5px * $var;
+    }
 }
 
-.tiie--space-bottom-10 {
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+/** tiie--space-bottom-* **/
+@for $var from 1 through 20 {
+    .tiie--space-bottom-#{5*$var} {
+        margin-bottom: 5px * $var;
+        padding-bottom: 5px * $var;
+    }
 }
 
-.tiie--space-right-10 {
-    padding-right: 10px;
-    margin-right: 10px;
+
+/** tiie--space-right-* **/
+@for $var from 1 through 20 {
+    .tiie--space-right-#{5*$var} {
+        margin-right: 5px * $var;
+        padding-right: 5px * $var;
+    }
 }
 
-.tiie--space-left-10 {
-    padding-left: 10px;
-    margin-left: 10px;
+
+/** tiie--space-left-* **/
+@for $var from 1 through 20 {
+    .tiie--space-left-#{5*$var} {
+        margin-left: 5px * $var;
+        padding-left: 5px * $var;
+    }
 }
 
-.tiie--space-top-10 {
-    padding-top: 10px;
-    margin-top: 10px;
+/** tiie--space-top-* **/
+@for $var from 1 through 20 {
+    .tiie--space-top-#{5*$var} {
+        margin-top: 5px * $var;
+        padding-top: 5px * $var;
+    }
 }
 
+/** tiie--display-* */
 .tiie--display-inline {
     display: inline;
 }
@@ -515,7 +531,6 @@
 }
 
 /** width **/
-/** test123 **/
 $init: 5%;
 $label : 5;
 
@@ -558,7 +573,7 @@ $label : 5;
 %tiie--hover:hover {
     cursor: pointer;
     font-size: 110%;
-    color: #007bff;
+    color: $tiieColorBrand;
 }
 
 .tiie--hover:hover {
@@ -638,7 +653,57 @@ $label : 5;
     font-weight: bold;
 }
 
-/** modyficators **/
+/** --padding-* **/
+@for $var from 1 through 20 {
+    .--padding-#{5*$var} {
+        padding: 5px * $var;
+    }
+}
+
+/** --padding-left* **/
+@for $var from 1 through 20 {
+    .--padding-left-#{5*$var} {
+        padding-left: 5px * $var;
+    }
+}
+
+/** --padding-right* **/
+@for $var from 1 through 20 {
+    .--padding-right-#{5*$var} {
+        padding-right: 5px * $var;
+    }
+}
+
+/** --padding-top* **/
+@for $var from 1 through 20 {
+    .--padding-top-#{5*$var} {
+        padding-top: 5px * $var;
+    }
+}
+
+/** --padding-bottom* **/
+@for $var from 1 through 20 {
+    .--padding-bottom-#{5*$var} {
+        padding-bottom: 5px * $var;
+    }
+}
+
+/** --padding-vertical* **/
+@for $var from 1 through 20 {
+    .--padding-vertical-#{5*$var} {
+        padding-top: 5px * $var;
+        padding-bottom: 5px * $var;
+    }
+}
+
+/** --padding-horizontally* **/
+@for $var from 1 through 20 {
+    .--padding-horizontally-#{5*$var} {
+        padding-left: 5px * $var;
+        padding-right: 5px * $var;
+    }
+}
+
 .--hover {
     cursor: pointer;
     color: #007bff;

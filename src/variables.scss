@@ -1,0 +1,181 @@
+@import 'functions.scss';
+
+$tiiePrimaryBorderRadius: 2px;
+
+/** colors **/
+$tiie-color-blue:#007bff;
+$tiie-color-indigo:#6610f2;
+$tiie-color-purple:#6f42c1;
+$tiie-color-pink:#e83e8c;
+$tiie-color-red:#dc3545;
+$tiie-color-orange:#fd7e14;
+$tiie-color-yellow:#ffc107;
+$tiie-color-green:#28a745;
+$tiie-color-teal:#20c997;
+$tiie-color-cyan:#17a2b8;
+$tiie-color-white:#fff;
+$tiie-color-gray:#6c757d;
+
+$tiie-color-primary:#007bff;
+$tiie-color-secondary:#6c757d;
+$tiie-color-success:#28a745;
+$tiie-color-info:#17a2b8;
+$tiie-color-warning:#ffc107;
+$tiie-color-error:crimson;
+$tiie-color-danger:#dc3545;
+
+$tiie-color-light:#f8f9fa;
+$tiie-color-dark:#343a40;
+// --gray-dark: #343a40;
+
+/** colors */
+$tiieColorBrand: #007bff;
+$tiieColorBrandFont: #007bff;
+$tiieColorBrandBackground: #c5e1ff;
+$tiieColorBrandBorder: #007bff;
+$tiieColorBrandBoxShadow: #007bff;
+
+$tiieColorBrandActive: #007bff;
+$tiieColorBrandActiveFont: #007bff;
+$tiieColorBrandActiveBackground: #c5e1ff;
+$tiieColorBrandActiveBorder: #007bff;
+$tiieColorBrandActiveBoxShadow: #007bff;
+
+$tiieColorBrandActive: #007bff;
+$tiieColorBrandActiveFont: #007bff;
+$tiieColorBrandActiveBackground: #c5e1ff;
+$tiieColorBrandActiveBorder: #007bff;
+$tiieColorBrandActiveBoxShadow: #007bff;
+
+/** tiieColorPrimary */
+$tiieColorPrimary: white;
+$tiieColorPrimaryFont: black;
+$tiieColorPrimaryBackground: white;
+$tiieColorPrimaryBorder: silver;
+$tiieColorPrimaryBoxShadow: white;
+
+$tiieColorPrimaryActive: $tiieColorBrand;
+$tiieColorPrimaryActiveFont: white;
+$tiieColorPrimaryActiveBackground: $tiieColorBrand;
+$tiieColorPrimaryActiveBorder: silver;
+$tiieColorPrimaryActiveBoxShadow: $tiieColorBrand;
+
+$tiieColorPrimaryHover: $tiieColorBrand;
+$tiieColorPrimaryHoverFont: white;
+$tiieColorPrimaryHoverBackground: $tiieColorBrand;
+$tiieColorPrimaryHoverBorder: silver;
+$tiieColorPrimaryHoverBoxShadow: $tiieColorBrand;
+
+/** tiieColorSecondary */
+$tiieColorSecondary: #6c757d;
+$tiieColorSecondaryFont: #6c757d;
+$tiieColorSecondaryBackground: #6c757d;
+$tiieColorSecondaryBorder: #6c757d;
+$tiieColorSecondaryBoxShadow: #6c757d;
+
+$tiieColorSecondaryActive: #6c757d;
+$tiieColorSecondaryActiveFont: #6c757d;
+$tiieColorSecondaryActiveBackground: #6c757d;
+$tiieColorSecondaryActiveBorder: #6c757d;
+$tiieColorSecondaryActiveBoxShadow: #6c757d;
+
+$tiieColorSecondaryHover: #6c757d;
+$tiieColorSecondaryHoverFont: #6c757d;
+$tiieColorSecondaryHoverBackground: #6c757d;
+$tiieColorSecondaryHoverBorder: #6c757d;
+$tiieColorSecondaryHoverBoxShadow: #6c757d;
+
+/** tiieColorSuccess */
+$tiieColorSuccess: #28a745;
+$tiieColorSuccessFont: #28a745;
+$tiieColorSuccessBackground: #28a745;
+$tiieColorSuccessBorder: #28a745;
+$tiieColorSuccessBoxShadow: #28a745;
+
+$tiieColorSuccessActive: #28a745;
+$tiieColorSuccessActiveFont: #28a745;
+$tiieColorSuccessActiveBackground: #28a745;
+$tiieColorSuccessActiveBorder: #28a745;
+$tiieColorSuccessActiveBoxShadow: #28a745;
+
+$tiieColorSuccessHover: #28a745;
+$tiieColorSuccessHoverFont: #28a745;
+$tiieColorSuccessHoverBackground: #28a745;
+$tiieColorSuccessHoverBorder: #28a745;
+$tiieColorSuccessHoverBoxShadow: #28a745;
+
+/** tiieColorInfo */
+$tiieColorInfo: #17a2b8;
+$tiieColorInfoFont: #17a2b8;
+$tiieColorInfoBackground: #17a2b8;
+$tiieColorInfoBorder: #17a2b8;
+$tiieColorInfoBoxShadow: #17a2b8;
+
+$tiieColorInfoActive: #17a2b8;
+$tiieColorInfoActiveFont: #17a2b8;
+$tiieColorInfoActiveBackground: #17a2b8;
+$tiieColorInfoActiveBorder: #17a2b8;
+$tiieColorInfoActiveBoxShadow: #17a2b8;
+
+$tiieColorInfoHover: #17a2b8;
+$tiieColorInfoHoverFont: #17a2b8;
+$tiieColorInfoHoverBackground: #17a2b8;
+$tiieColorInfoHoverBorder: #17a2b8;
+$tiieColorInfoHoverBoxShadow: #17a2b8;
+
+/** tiieColorWarning */
+$tiieColorWarning: #ffc107;
+$tiieColorWarningFont: #ffc107;
+$tiieColorWarningBackground: #ffc107;
+$tiieColorWarningBorder: #ffc107;
+$tiieColorWarningBoxShadow: #ffc107;
+
+$tiieColorWarningActive: #ffc107;
+$tiieColorWarningActiveFont: #ffc107;
+$tiieColorWarningActiveBackground: #ffc107;
+$tiieColorWarningActiveBorder: #ffc107;
+$tiieColorWarningActiveBoxShadow: #ffc107;
+
+$tiieColorWarningHover: #ffc107;
+$tiieColorWarningHoverFont: #ffc107;
+$tiieColorWarningHoverBackground: #ffc107;
+$tiieColorWarningHoverBorder: #ffc107;
+$tiieColorWarningHoverBoxShadow: #ffc107;
+
+/** tiieColorError */
+$tiieColorError: crimson;
+$tiieColorErrorFont: crimson;
+$tiieColorErrorBackground: #ffcdd6;
+$tiieColorErrorBorder: crimson;
+$tiieColorErrorBoxShadow: crimson;
+
+$tiieColorErrorActive: crimson;
+$tiieColorErrorActiveFont: crimson;
+$tiieColorErrorActiveBackground: #ffcdd6;
+$tiieColorErrorActiveBorder: crimson;
+$tiieColorErrorActiveBoxShadow: crimson;
+
+$tiieColorErrorHover: crimson;
+$tiieColorErrorHoverFont: crimson;
+$tiieColorErrorHoverBackground: #ffcdd6;
+$tiieColorErrorHoverBorder: crimson;
+$tiieColorErrorHoverBoxShadow: crimson;
+
+/** tiieColorDanger */
+$tiieColorDanger: #dc3545;
+$tiieColorDangerFont: #dc3545;
+$tiieColorDangerBackground: #dc3545;
+$tiieColorDangerBorder: #dc3545;
+$tiieColorDangerBoxShadow: #dc3545;
+
+$tiieColorDangerActive: #dc3545;
+$tiieColorDangerActiveFont: #dc3545;
+$tiieColorDangerActiveBackground: #dc3545;
+$tiieColorDangerActiveBorder: #dc3545;
+$tiieColorDangerActiveBoxShadow: #dc3545;
+
+$tiieColorDangerHover: #dc3545;
+$tiieColorDangerHoverFont: #dc3545;
+$tiieColorDangerHoverBackground: #dc3545;
+$tiieColorDangerHoverBorder: #dc3545;
+$tiieColorDangerHoverBoxShadow: #dc3545;

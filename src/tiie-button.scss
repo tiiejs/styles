@@ -1,8 +1,5 @@
-@import 'tiie-variables';
-
-@function make-greener($value) {
-    @return $value + rgb(0,50,0); // arithmetic with colors is totally fine, btw
-}
+@import 'variables.scss';
+@import 'functions.scss';
 
 .tiie-button {
     color: $tiie-color-white;
@@ -39,87 +36,87 @@
 }
 
 .tiie-button.--primary:hover {
-    background-color: make-greener($tiie-color-primary);
+    background-color: makeGreener($tiie-color-primary);
 }
 
 .tiie-button.--blue:hover {
-    background-color: make-greener($tiie-color-blue);
+    background-color: makeGreener($tiie-color-blue);
 }
 
 .tiie-button.--indigo:hover {
-    background-color: make-greener($tiie-color-indigo);
+    background-color: makeGreener($tiie-color-indigo);
 }
 
 .tiie-button.--purple:hover {
-    background-color: make-greener($tiie-color-purple);
+    background-color: makeGreener($tiie-color-purple);
 }
 
 .tiie-button.--pink:hover {
-    background-color: make-greener($tiie-color-pink);
+    background-color: makeGreener($tiie-color-pink);
 }
 
 .tiie-button.--red:hover {
-    background-color: make-greener($tiie-color-red);
+    background-color: makeGreener($tiie-color-red);
 }
 
 .tiie-button.--orange:hover {
-    background-color: make-greener($tiie-color-orange);
+    background-color: makeGreener($tiie-color-orange);
 }
 
 .tiie-button.--yellow:hover {
-    background-color: make-greener($tiie-color-yellow);
+    background-color: makeGreener($tiie-color-yellow);
 }
 
 .tiie-button.--green:hover {
-    background-color: make-greener($tiie-color-green);
+    background-color: makeGreener($tiie-color-green);
 }
 
 .tiie-button.--teal:hover {
-    background-color: make-greener($tiie-color-teal);
+    background-color: makeGreener($tiie-color-teal);
 }
 
 .tiie-button.--cyan:hover {
-    background-color: make-greener($tiie-color-cyan);
+    background-color: makeGreener($tiie-color-cyan);
 }
 
 .tiie-button.--white:hover {
-    background-color: make-greener($tiie-color-white);
+    background-color: makeGreener($tiie-color-white);
 }
 
 .tiie-button.--gray:hover {
-    background-color: make-greener($tiie-color-gray);
+    background-color: makeGreener($tiie-color-gray);
 }
 
 .tiie-button.--primary:hover {
-    background-color: make-greener($tiie-color-primary);
+    background-color: makeGreener($tiie-color-primary);
 }
 
 .tiie-button.--secondary:hover {
-    background-color: make-greener($tiie-color-secondary);
+    background-color: makeGreener($tiie-color-secondary);
 }
 
 .tiie-button.--success:hover {
-    background-color: make-greener($tiie-color-success);
+    background-color: makeGreener($tiie-color-success);
 }
 
 .tiie-button.--info:hover {
-    background-color: make-greener($tiie-color-info);
+    background-color: makeGreener($tiie-color-info);
 }
 
 .tiie-button.--warning:hover {
-    background-color: make-greener($tiie-color-warning);
+    background-color: makeGreener($tiie-color-warning);
 }
 
 .tiie-button.--danger:hover {
-    background-color: make-greener($tiie-color-danger);
+    background-color: makeGreener($tiie-color-danger);
 }
 
 .tiie-button.--light:hover {
-    background-color: make-greener($tiie-color-light);
+    background-color: makeGreener($tiie-color-light);
 }
 
 .tiie-button.--dark:hover {
-    background-color: make-greener($tiie-color-dark);
+    background-color: makeGreener($tiie-color-dark);
 }
 
 .tiie-button > :first-child {

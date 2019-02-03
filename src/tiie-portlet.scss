@@ -41,16 +41,17 @@
     padding: 10px;
 }
 
-// body
-.tiie-portlet__body.--no-padding {
-    padding: 0px;
+.tiie-portlet__body.--padding-horizontally {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
-.tiie-portlet__body.--top-padding {
+.tiie-portlet__body.--padding-vertical {
+    padding-left: 0px;
+    padding-right: 0px;
     padding-top: 10px;
-}
-
-.tiie-portlet__body.--bottom-padding {
     padding-bottom: 10px;
 }
 
