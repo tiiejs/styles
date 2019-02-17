@@ -1,21 +1,23 @@
-@import 'variables.scss';
+@import "~Tiie/Styles/variables.scss";
 
 .tiie-table {
-    border : 1px whitesmoke solid;
+    background-color: $tiieColorPrimaryBackground;
+    color: $tiieColorPrimaryFont;
     width: 100%;
     border-spacing: 0px;
-    border-collapse: separate;
+    border-collapse: collapse;
 
-    thead {
-        th {
-
-        }
+    th, td {
+        background-color: $tiieColorPrimaryBackground;
+        border: 1px $tiieColorPrimaryBorder dotted;
+        padding: 5px;
     }
 
-    tbody {
-        td {
-            padding: 5px;
-            border-bottom: 1px whitesmoke solid;
-        }
+    thead {
+        font-weight: bold;
+    }
+
+    thead :last-child {
+        border-bottom: 2px $tiieColorPrimaryBorder solid;
     }
 }
