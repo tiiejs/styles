@@ -7,6 +7,7 @@
 @import "tiie-section.scss";
 @import "tiie-table.scss";
 @import "tiie-textarea.scss";
+@import "tiie-field.scss";
 @import "variables.scss";
 
 * {
@@ -558,6 +559,23 @@ $label : 5;
 
 .tiie--height-10 {
     height: 10%;
+}
+
+.tiie--min-height-100px {
+    min-height: 100px;
+}
+
+.tiie--min-height-200px {
+    min-height: 200px;
+}
+
+.tiie--min-height-300px {
+    min-height: 300px;
+}
+
+.tiie-fit {
+    width: 100%;
+    height: 100%;
 }
 
 /** background **/

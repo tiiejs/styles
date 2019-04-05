@@ -1,13 +1,22 @@
 .tiie-section {
     border: 1px #EBEFF2 solid;
+    /* padding: 5px; */
+}
+
+.tiie-section__head {
+    border-bottom: 1px #ebeff2 solid;
     padding: 10px;
-    // font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.tiie-section__body {
+    padding: 10px;
 }
 
 .tiie-section__head {}
 
 .tiie-section__title {
-    font-size: 17px;
+    font-size: 13px;
     font-weight: bold;
 }
 

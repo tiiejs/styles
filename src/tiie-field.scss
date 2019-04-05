@@ -1,0 +1,17 @@
+@import "~Tiie/Styles/variables.scss";
+
+.tiie-field {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tiie-field__label {
+    padding-right: 10px;
+    width: 30%;
+    text-align: right;
+}
+
+.tiie-field__content {
+    width: 70%;
+}
