@@ -1,0 +1,9 @@
+@import '~Tiie/Styles/mixin.scss';
+@import '~Tiie/Styles/variables.scss';
+
+.tiie-pointer:hover, a.tiie-pointer:hover {
+    cursor: pointer;
+    color: $tiieColorBrand;
+
+    @include transition(color 0.5s ease, background-color 0.5s ease);
+}

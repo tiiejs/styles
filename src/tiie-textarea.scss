@@ -1,7 +1,8 @@
 .tiie-textarea {
     resize: none;
-    overflow: hidden;
+    // overflow: hidden;
 
+    overflow: auto;
     width: 100%;
     // min-height: 50px;
     // max-height: 100px;
