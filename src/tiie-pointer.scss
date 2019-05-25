@@ -3,6 +3,12 @@
 
 .tiie-pointer:hover, a.tiie-pointer:hover {
     cursor: pointer;
+    font-weight: bold;
+
+    @include transition(color 0.5s ease, background-color 0.5s ease);
+}
+
+.tiie-pointer.--color-brand:hover {
     color: $tiieColorBrand;
 
     @include transition(color 0.5s ease, background-color 0.5s ease);

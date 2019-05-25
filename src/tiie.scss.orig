@@ -10,7 +10,6 @@
 @import "tiie-textarea.scss";
 @import "tiie-field.scss";
 @import "variables.scss";
-@import "responsive.scss";
 
 * {
     box-sizing: border-box;

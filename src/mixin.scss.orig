@@ -1,3 +1,18 @@
+// a {
+//   color: blue;
+//   display: inline-block;
+//   padding: 10px;
+//   text-decoration: none;
+//   background-color: orange;
+//   border-radius: 4px;
+//   @include transition(background-color 1s .5s, color 2s);
+// }
+// a:hover {
+//    color: red;
+//   background-color: blue;
+// }
+//
+
 @function calculateRem($size) {
   $remSize: $size / 16px;
   @return $remSize * 1rem;
@@ -7,6 +22,55 @@
   font-size: $size;
   font-size: calculateRem($size);
 }
+
+// Usage
+// p {
+//   @include font-size(14px)
+// }
+// Output
+// p {
+//   font-size: 14px; //Will be overridden if browser supports rem
+//   font-size: 0.8rem;
+// }
+
+@mixin bp-large {
+  @media only screen and (max-width: 60em) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media only screen and (max-width: 40em) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media only screen and (max-width: 30em) {
+    @content;
+  }
+}
+
+// Usage
+// .sidebar {
+//   width: 60%;
+//   float: left;
+//   margin: 0 2% 0 0;
+//   @include bp-small {
+//     width: 100%;
+//     float: none;
+//     margin: 0;
+//   }
+// }
+// Output
+// .sidebar {
+//   width: 60%;
+//   float: left;
+//   margin: 0 2% 0 0;
+//   @media only screen and (max-width: 30){
+//     .sidebar{width: 100%; float: none; margin: 0;}
+//   }
+// }
 
 @mixin keyframes($animation-name) {
     @-webkit-keyframes #{$animation-name} {
@@ -118,4 +182,54 @@
 // .visually-hidden {
 //   @extend %visuallyhidden;
 // }
+
+// for-up
+@mixin for-tablet-up {
+  @media (min-width: 600px) { @content; }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+// for
+@mixin for-phone {
+  @media (max-width: 599px) { @content; }
+}
+
+@mixin for-tablet-portrait {
+  @media (min-width: 600px) and (max-width: 899px) { @content; }
+}
+
+@mixin for-tablet-landscape {
+  @media (min-width: 900px) and (max-width: 1199px) { @content; }
+}
+
+@mixin for-tablet {
+  @media (min-width: 600px) and (max-width: 1199px) { @content; }
+}
+
+@mixin for-mobile {
+  @media (max-width: 1199px){ @content; }
+}
+
+@mixin for-desktop {
+  @media (min-width: 1200px) and (max-width: 1799px){ @content; }
+}
+
+@mixin for-big-desktop {
+  @media (min-width: 1800px) { @content; }
+}
 

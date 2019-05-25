@@ -1,25 +1,23 @@
 .tiie-section {
-    border: 1px #EBEFF2 solid;
+    /* border: 1px #EBEFF2 solid; */
     /* padding: 5px; */
 }
 
 .tiie-section__head {
-    border-bottom: 1px #ebeff2 solid;
+    border-bottom: 1px #c0c0c0 dotted;
     padding: 10px;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
+    font-size: 16px;
 }
 
 .tiie-section__body {
     padding: 10px;
 }
 
-.tiie-section__head {}
-
 .tiie-section__title {
-    font-size: 13px;
-    font-weight: bold;
+    /* font-size: 13px; */
+    /* font-weight: bold; */
 }
 
 .tiie-section__body {}
-
 .tiie-section__foot {}

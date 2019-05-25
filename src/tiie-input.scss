@@ -9,6 +9,16 @@
     color: #454545;
 }
 
+.tiie-input.--inset-shadow {
+    transition: 1s ease;
+    box-shadow: inset 1px 0 5px rgba(0,0,0,.1);
+}
+
+.tiie-input:focus.--inset-shadow {
+    transition: 1s ease;
+    box-shadow: none;
+}
+
 .tiie-input.--error {
     background-color: $tiieColorErrorBackground;
     border: 1px $tiieColorErrorBorder solid;
